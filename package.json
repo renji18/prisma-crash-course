@@ -1,0 +1,24 @@
+{
+  "name": "prisma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js -e js,ejs,jsx",
+    "generate": "npx prisma generate",
+    "migrate": "npx prisma migrate dev --name init --create-only",
+    "deploy": "npx prisma migrate deploy",
+    "format": "npx prisma format"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.6.0",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5",
+    "prisma": "^5.6.0"
+  }
+}
